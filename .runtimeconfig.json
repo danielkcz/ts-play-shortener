@@ -1,0 +1,8 @@
+{
+  "playground": {
+    "baseurl": "https://www.typescriptlang.org/play/index.html"
+  },
+  "redirector": {
+    "baseurl": "https://tsplay.now.sh"
+  }
+}

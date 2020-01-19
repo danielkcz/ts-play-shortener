@@ -1,0 +1,20 @@
+rules:
+  '@typescript-eslint/no-unused-vars': warn
+  'no-undef': 0
+
+extends:
+  - eslint:recommended
+  - plugin:prettier/recommended
+
+plugins:
+  - '@typescript-eslint'
+
+globals:
+  __DEV__: readonly
+
+env:
+  node: true
+  es6: true
+
+parser: '@typescript-eslint/parser'
+parserOptions: { sourceType: module }

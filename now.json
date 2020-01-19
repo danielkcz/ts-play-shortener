@@ -1,0 +1,10 @@
+{
+  "name": "ts-play",
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://europe-west1-ts-play-a4c7e.cloudfunctions.net/main/$1"
+    }
+  ]
+}
