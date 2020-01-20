@@ -1,9 +1,17 @@
 {
   "private": true,
+  "description": "Simple self-hosted url shortener for Typescript Playground",
+  "author": "Daniel K.",  
+  "license": "MIT",
+  "homepage": "https://www.typescriptlang.org",  
   "scripts": {
     "dev:be": "yarn --cwd backend serve",
     "build:be": "yarn --cwd backend build",
     "deploy:be": "firebase deploy --only functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FredyC/ts-play-shortener.git"
   },
   "workspaces": {
     "packages": [
