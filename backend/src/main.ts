@@ -25,6 +25,10 @@ const slugCache = new Map<string, string>()
 
 app.post('/add', async (req, res) => {
   const { source } = req.body
+  if (!source) {
+    res.sendStatus(422)
+    return
+  }
 
   const slug = slugCache.get(source) ?? (await handleNewEntry(source))
   if (slug) {
