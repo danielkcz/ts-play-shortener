@@ -13,7 +13,7 @@ app.get<{ slug: string }>('/:slug', async (req, res) => {
   const entry = await getEntry(req.params.slug)
   if (entry) {
     const baseUrl = getConfig('playground', 'baseurl')
-    res.redirect(`${baseUrl}${entry.source}`)
+    res.redirect(`${baseUrl}/${entry.source}`)
   } else {
     res.sendStatus(404)
   }
